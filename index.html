@@ -10,20 +10,20 @@
     body { font-family: 'Tajawal', sans-serif; }
     @keyframes pulse-ring {
       0% { box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.8); transform: scale(1); }
-      70% { box-shadow: 0 0 0 6px rgba(234, 179, 8, 0); transform: scale(1.02); }
+      70% { box-shadow: 0 0 0 4px rgba(234, 179, 8, 0); transform: scale(1.02); }
       100% { box-shadow: 0 0 0 0 rgba(234, 179, 8, 0); transform: scale(1); }
     }
     .hotspot-pin { animation: pulse-ring 2s infinite; }
 
-    /* تحكّم صارم وثابت بحجم الدبابيس لتكون صغيرة جداً ومناسبه على الجوال واللابتوب */
+    /* تصغير إضافي وصارم جداً لحجم الدبابيس لتكون صغيرة للغاية ومثالية */
     .custom-pin {
-      padding: 3px 8px !important;
-      font-size: 11px !important;
+      padding: 1px 4px !important;
+      font-size: 8px !important;
       border-radius: 9999px !important;
       white-space: nowrap !important;
     }
     .custom-pin span {
-      font-size: 11px !important;
+      font-size: 8px !important;
     }
   </style>
 </head>
@@ -52,25 +52,25 @@
 
       <!-- زر غرفة النوم -->
       <button onclick="openModal('🛏️ معايير غرف النوم (الشقة)', apartmentData.bedroom)" 
-              class="hotspot-pin custom-pin absolute top-[57%] left-[63%] -translate-x-1/2 -translate-y-1/2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-1 cursor-pointer" style="z-index: 50;">
+              class="hotspot-pin custom-pin absolute top-[57%] left-[63%] -translate-x-1/2 -translate-y-1/2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-0.5 cursor-pointer" style="z-index: 50;">
         <span>🛏️</span><span class="font-bold">غرفة النوم</span>
       </button>
 
       <!-- زر دورة المياه -->
       <button onclick="openModal('🚿 معايير دورات المياه (الشقة)', apartmentData.bathroom)" 
-              class="hotspot-pin custom-pin absolute top-[50%] left-[32%] -translate-x-1/2 -translate-y-1/2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-1 cursor-pointer" style="z-index: 50;">
+              class="hotspot-pin custom-pin absolute top-[50%] left-[32%] -translate-x-1/2 -translate-y-1/2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-0.5 cursor-pointer" style="z-index: 50;">
         <span>🚿</span><span class="font-bold">دورة المياه</span>
       </button>
 
       <!-- زر المطبخ -->
       <button onclick="openModal('🍳 معايير تجهيزات المطبخ (الشقة)', apartmentData.kitchen)" 
-              class="hotspot-pin custom-pin absolute top-[36%] left-[48%] -translate-x-1/2 -translate-y-1/2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-1 cursor-pointer" style="z-index: 50;">
+              class="hotspot-pin custom-pin absolute top-[36%] left-[48%] -translate-x-1/2 -translate-y-1/2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-0.5 cursor-pointer" style="z-index: 50;">
         <span>🍳</span><span class="font-bold">المطبخ والتحضير</span>
       </button>
 
       <!-- زر غرفة المعيشة -->
       <button onclick="openModal('🛋️ معايير غرفة المعيشة (الشقة)', apartmentData.living)" 
-              class="hotspot-pin custom-pin absolute top-[70%] left-[53%] -translate-x-1/2 -translate-y-1/2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-1 cursor-pointer" style="z-index: 50;">
+              class="hotspot-pin custom-pin absolute top-[70%] left-[53%] -translate-x-1/2 -translate-y-1/2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-0.5 cursor-pointer" style="z-index: 50;">
         <span>🛋️</span><span class="font-bold">غرفة المعيشة</span>
       </button>
     </div>
@@ -94,37 +94,37 @@
 
       <!-- زر دورة المياه -->
       <button onclick="openModal('🚿 معايير دورات المياه (الفلة)', villaData.bathroom)" 
-              class="hotspot-pin custom-pin absolute top-[44%] left-[17%] -translate-x-1/2 -translate-y-1/2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-1 cursor-pointer" style="z-index: 50;">
+              class="hotspot-pin custom-pin absolute top-[44%] left-[17%] -translate-x-1/2 -translate-y-1/2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-0.5 cursor-pointer" style="z-index: 50;">
         <span>🚿</span><span class="font-bold">دورة المياه</span>
       </button>
 
       <!-- زر غرفة النوم -->
       <button onclick="openModal('🛏️ معايير غرف النوم (الفلة)', villaData.bedroom)" 
-              class="hotspot-pin custom-pin absolute top-[30%] left-[34%] -translate-x-1/2 -translate-y-1/2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-1 cursor-pointer" style="z-index: 50;">
+              class="hotspot-pin custom-pin absolute top-[30%] left-[34%] -translate-x-1/2 -translate-y-1/2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-0.5 cursor-pointer" style="z-index: 50;">
         <span>🛏️</span><span class="font-bold">غرفة النوم</span>
       </button>
 
       <!-- زر غرفة المعيشة -->
       <button onclick="openModal('🛋️ معايير غرفة المعيشة والضيافة (الفلة)', villaData.living)" 
-              class="hotspot-pin custom-pin absolute top-[53%] left-[43%] -translate-x-1/2 -translate-y-1/2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-1 cursor-pointer" style="z-index: 50;">
+              class="hotspot-pin custom-pin absolute top-[53%] left-[43%] -translate-x-1/2 -translate-y-1/2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-0.5 cursor-pointer" style="z-index: 50;">
         <span>🛋️</span><span class="font-bold">غرفة المعيشة</span>
       </button>
 
       <!-- زر المطبخ -->
       <button onclick="openModal('🍳 معايير تجهيزات المطبخ (الفلة)', villaData.kitchen)" 
-              class="hotspot-pin custom-pin absolute top-[58%] left-[27%] -translate-x-1/2 -translate-y-1/2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-1 cursor-pointer" style="z-index: 50;">
+              class="hotspot-pin custom-pin absolute top-[58%] left-[27%] -translate-x-1/2 -translate-y-1/2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-0.5 cursor-pointer" style="z-index: 50;">
         <span>🍳</span><span class="font-bold">المطبخ</span>
       </button>
 
       <!-- زر المسبح والإنقاذ -->
       <button onclick="openModal('🏊‍♂️ معايير المسابح (الفلة)', villaData.pool)" 
-              class="hotspot-pin custom-pin absolute top-[44%] left-[64%] -translate-x-1/2 -translate-y-1/2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-1 cursor-pointer" style="z-index: 50;">
+              class="hotspot-pin custom-pin absolute top-[44%] left-[64%] -translate-x-1/2 -translate-y-1/2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-0.5 cursor-pointer" style="z-index: 50;">
         <span>🏊‍♂️</span><span class="font-bold">المسبح والإنقاذ</span>
       </button>
 
       <!-- زر الحديقة والجلسات -->
       <button onclick="openModal('🏡 معايير الحدائق والمساحات الخارجية (الفلة)', villaData.garden)" 
-              class="hotspot-pin custom-pin absolute top-[74%] left-[65%] -translate-x-1/2 -translate-y-1/2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-1 cursor-pointer" style="z-index: 50;">
+              class="hotspot-pin custom-pin absolute top-[74%] left-[65%] -translate-x-1/2 -translate-y-1/2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black border border-white shadow-xl transition flex items-center gap-0.5 cursor-pointer" style="z-index: 50;">
         <span>🏡</span><span class="font-bold">الحديقة والجلسات</span>
       </button>
     </div>
@@ -163,7 +163,7 @@
       "توفير إضاءة كافية وموزعة بشكل مناسب في المدخل الرئيسي والممرات والسلالم لضمان وضوح الرؤية وسلامة الحركة، تعمل بكفاءة طوال فترة الإقامة. ويشترط أن تكون وحدات الإضاءة سليمة ومطابقة لاشتراطات السلامة الكهربائية.",
       "توفير موقف مخصص لسيارة واحدة على الأقل، متاحاً للضيف طوال مدة إقامتهم. ويشترط أن يكون الموقف بمساحة كافية وواضح التحديد وآمناً وسهل الوصول إليه كموقف للوحدة.",
       "توفير مصعد بالمبنى يعمل بكفاءة يخدم جميع الطوابق ابتداءً من الطابق الأرضي، وذلك إذا كان المبنى يتكون من ثلاثة طوابق أو أكثر. ويشترط أن يكون المصعد مطابقاً لاشتراطات السلامة المعتمدة، وحاصلاً على شهادة فحص سارية من الجهات المختصة، ومزوداً بأنظمة الإنذار والإضاءة الاحتياطية وزر الطوارئ.",
-      "الأطعمة والمشروبات - إن وجدت -: في حال توفير أطعمة ومشروبات للضيف، على سبيل المثال العصائر والوجبات الخفيفة، يجب أن تكون سارية الصلاحية وبحالة جيدة وصالحة للاستهلاك الآدمي. ويشترط أن تكون جميع المنتجات محفوظة بطريقة سليمة وفي درجة الحرارة المناسبة، ومطابقة لاشتراطات السلامة الغذائية المعتمدة، مع وضوح تاريخ الإنتاج والانتهاء على العبوات."
+      "الأطعمة والمشروبات - إن وجدت -: في حال توفير أطعمة ومشروبات للضيف، على سبيل المثال العصائر والوجبات الخفيفة، يجب أن تكون سارية الصلاحية وبحالة جيدة وصالحة للاستخدام الآدمي. ويشترط أن تكون جميع المنتجات محفوظة بطريقة سليمة وفي درجة الحرارة المناسبة، ومطابقة لاشتراطات السلامة الغذائية المعتمدة، مع وضوح تاريخ الإنتاج والانتهاء على العبوات."
     ];
 
     const apartmentData = {
@@ -298,9 +298,6 @@
       document.getElementById('modal').style.display = 'flex';
     }
 
-    completedcloseModal = () => {
-      document.getElementById('modal').style.display = 'none';
-    }
     function closeModal() {
       document.getElementById('modal').style.display = 'none';
     }
